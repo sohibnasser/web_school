@@ -3,13 +3,29 @@ import theme from "../../../../Design-System/ResableComponant/Config";
 import instractor from "../../../../Images/Instractor/Instractor.jpg";
 
 export const CreativeInstractorWrapper = styled("section")`
-    height: 135vh;
-    padding: 5rem 0;
+    height: 125vh;
+    padding-top : 9%;
+    display: flex;
     text-align: center;
+    align-items: center;
     background : url(${instractor}) fixed;
     background-size : cover ;
     background-repeat : no-repeat ;
     overflow: hidden;
+
+@media screen and (min-width:427px) and (max-width:768px) {
+    padding-top : 12%;
+}
+
+@media screen and (min-width:321px) and (max-width:426px) {
+    padding-top : 30%;
+    height: 125vh;
+}
+
+@media screen and (max-width:320px) {
+    padding-top : 30%;
+    height: 118vh;
+}
     
 `;
 

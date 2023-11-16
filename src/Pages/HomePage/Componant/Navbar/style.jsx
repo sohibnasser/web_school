@@ -64,10 +64,14 @@ export const School = styled("span")`
 `;
 
 export const LinksWrapper = styled("div")`  
-   gap : 1rem;
+   gap : 1.5rem;
    display : flex;
    width: 55% ;
 
+
+@media screen and (min-width:992px) and (max-width:1024px) {
+    gap : 1rem;
+}
 
 @media screen and (min-width:769px) and (max-width:991px) {
     text-align: center;

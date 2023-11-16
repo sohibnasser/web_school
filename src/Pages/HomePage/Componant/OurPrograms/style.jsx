@@ -3,8 +3,8 @@ import theme from "../../../../Design-System/ResableComponant/Config";
 import ourPrograms from "../../../../Images/ourPrograms/ourPrograms.jpg";
 
 export const OurProgramsWrapper = styled("section") `
-    height: 120vh;
-    padding-top : 8rem;
+    height: 100vh;
+    padding-top : 9%;
     text-align: center;
     background : url(${ourPrograms}) fixed;
     background-size : cover ;
@@ -12,19 +12,24 @@ export const OurProgramsWrapper = styled("section") `
     overflow: hidden;
 
 
+@media screen and (min-width:727px) and (max-width:768px) {
+    padding-top : 15%;
+
+}
+
 @media screen and (min-width:427px) and (max-width:726px) {
-    padding-top : 6rem;
-    height: 155vh;
+    padding-top : 13%;
+    height: 145vh;
 }
 
 @media screen and (min-width:321px) and (max-width:426px) {
-    padding : 4rem 0 ;
-    height: 200vh;
+    padding-top : 22%;
+    height: 190vh;
 }
 
 @media screen and (max-width:320px) {
-    padding : 4rem 0 ;
-    height: 200vh;
+    padding-top: 30%;
+    height: 190vh;
 }
 
 `;

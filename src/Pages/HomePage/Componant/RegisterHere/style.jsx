@@ -3,34 +3,38 @@ import theme from "../../../../Design-System/ResableComponant/Config";
 
 export const  RegisterHereWrapper = styled("section")`
     width: 100%;
-    padding : 10% 0  20% 0;
-    display : flex ;
-    align-items :flex-start;
+    height: 100vh;
+    padding-top : 5%;
+    display: flex;
+    align-items: center;
     position: relative; 
 
 @media screen and (min-width:427px) and (max-width:650px) {
     display: block;
-    height: 50rem;
+    height: 48rem;
+    padding-top : 10%;
 }
 
 @media screen and (min-width:321px) and (max-width:426px) {
     display: block;
-    height: 50rem;
+    height: 55rem;
+    padding-top : 25%;
 }
 
 @media screen and (max-width:320px) {
     display: block;
-    height: 45rem;
+    height: 50rem;
+    padding-top : 20%;
 }
 `;
 
 export const Header = styled("div")`
     width : 50% ;
-    padding-top : 7rem ; 
+    padding-top : 1% ; 
 
 @media screen and (min-width:769px) and (max-width:1024px) {
     width : 40% ;
-    margin-top: 1rem;
+    padding-top : 2% ;
 }
 
 @media screen and (min-width:651px) and (max-width:768px) {

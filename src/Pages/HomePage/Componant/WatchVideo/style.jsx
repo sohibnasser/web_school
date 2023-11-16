@@ -6,31 +6,32 @@ import WatchVideo from "../../../../Images/Watch/WatchVideo.jpg";
 
 export const WatchVideoWrapper = styled("section")`
     height: 100vh;
-    padding : 11rem 0 ;
+    padding-top : 5%;
+    display: flex;
+    align-items: center;
     background : url(${WatchVideo}) fixed ;
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
 
-
 @media screen and (min-width:769px) and (max-width:1024px) {
-    padding : 7rem 0 ;
-    height: 85vh;
+    height: 100vh;
+    padding-top : 4%;
 }
 
 @media screen and (min-width:427px) and (max-width:768px) {
-    padding-top : 5rem;
-    height: 115vh;
+    height: 105vh;
+    padding-top : 10%;
 }
 
 @media screen and (min-width:321px) and (max-width:426px) {
-    padding : 4rem 0 ;
-    height: 125vh;
+    height: 120vh;
+    padding-top : 20%;
 }
 
 @media screen and (max-width:320px) {
-    padding-top : 4rem ;
-    height: 40rem;
+    height: 45rem;
+    padding-top : 20%;
 }
 `;
 
@@ -59,6 +60,7 @@ export const WatchVideoContent = styled("div")`
 
 export const Info = styled("div")`
     width: 55%;
+   
 
 @media screen and (min-width:769px) and (max-width:1024px) {
     width: 60%;  
@@ -138,26 +140,30 @@ export const P = styled("p")`
 export const WatchingVideo = styled("div")`
     width: 45%;
 
+
 @media screen and (min-width:769px) and (max-width:1024px) {
     width: 50%;
 }
 
 @media screen and (min-width:427px) and (max-width:768px) {
-    width: 64%; 
+    width: 65%; 
+    height: 18rem;
+    padding-top: 6%;
     margin: auto;
-    padding-top: 2rem;
 }
 
 @media screen and (min-width:321px) and (max-width:426px) {
-    padding-top : 3rem ;
     width: 100%; 
+    height: 13rem;
+    margin: auto;
+    margin-top: 8%;
 }
 
 @media screen and (max-width:320px) {
     width: 100%;
     float: none;
     padding-top : 1rem ;
-    margin: 0;
+    margin: 0 auto;
 }
 `;
 
@@ -167,22 +173,19 @@ export const Iframee = styled("iframe") `
    border-radius: 1rem;
 
 @media screen and (min-width:769px) and (max-width:1024px) {
-    height: 80%;
+    height: 100%;
     margin-top: 1.5rem;
 }
 
 @media screen and (min-width:427px) and (max-width:768px) {
-    height: 15rem;
-    width: 100%; 
+    height: 100%;
 }
 
 @media screen and (min-width:321px) and (max-width:426px) {
-    height: 13rem;
-    width: 100%;
+    height: 100%;
 }
 
 @media screen and (max-width:320px) {
-    height: 10rem;
-    width: 100%;
+    height: 100%;
 }
 `;

@@ -2,7 +2,7 @@ import React from 'react';
 import { Helmet } from "react-helmet-async";
 import Instractor from '../HomePage/Componant/Instractor/Instractor';
 import Navbar from '../HomePage/Componant/Navbar/Navbar';
-import Overview from '../HomePage/Componant/Overview/Overview';
+// import Overview from '../HomePage/Componant/Overview/Overview';
 
 export default function OurInstractor() {
   return (
@@ -15,7 +15,7 @@ export default function OurInstractor() {
 
 
       <Navbar />
-      <Overview />
+      {/* <Overview /> */}
       <Instractor />
     </>
   )

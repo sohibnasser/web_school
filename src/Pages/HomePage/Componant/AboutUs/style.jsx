@@ -30,13 +30,13 @@ export const AboutUswrapper = styled("section")`
 }
 
 @media screen and (min-width:321px) and (max-width:575px) {
-    padding: 4rem 0 0 0;
+    padding-top: 20%;
     display : block ;
     height: 48rem;
 }
 
 @media screen and (max-width:320px) {
-    padding: 4rem 0 0 0;
+    padding-top : 40%;
     display : block ;
     height: 52rem;
 }
