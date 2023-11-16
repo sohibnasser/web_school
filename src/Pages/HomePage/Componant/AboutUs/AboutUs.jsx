@@ -1,11 +1,13 @@
 
+import { Container } from "@mui/material";
 import SlideAboutUs from "./SlideAboutUs/SlideAboutUs";
 import { AboutUswrapper, Data, H2, P, SlideAboutUsWrapper } from "./style";
 
 export default function AboutUs() {
   
   return (
-    <div className="container">
+  
+      <Container>
 
       <AboutUswrapper data-aos="fade-up"  data-aos-delay="200" data-aos-duration="500">
 
@@ -27,7 +29,8 @@ export default function AboutUs() {
           </SlideAboutUsWrapper>
         
       </AboutUswrapper>
-    </div>
+      </Container>
+ 
   );
 }
 

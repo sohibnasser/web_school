@@ -1,21 +1,22 @@
+import { Container } from "@mui/material";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Watch from "../../../../Images/Watch/Watch.mp4";
-import { P, Video, WATCH, WatchVideoContent, WatchVideoWrapper } from './style';
+import { Iframee, Info, P, Video, WATCH, WatchVideoContent, WatchVideoWrapper, WatchingVideo } from './style';
 export default function WatchVideo() {
   useEffect(() => {
     AOS.init();
     AOS.refresh();
   }, []);
   return (
-    <WatchVideoWrapper>
-     
-        <div className="container">
+
+  <WatchVideoWrapper>
+      <Container>
      
           <WatchVideoContent  data-aos="fade-up"  data-aos-delay="250" data-aos-duration="500">
 
-            <div>
+            <Info>
                 <WATCH>
                 Watch <Video>Video</Video>
                 </WATCH>
@@ -28,16 +29,16 @@ export default function WatchVideo() {
                 Subscription packages are designed to suit you ... Subscribe now and do not hesitate , You can cancel or change your subscription at any time
                 </P>
              
-            </div>
+            </Info>
 
-            <div>
-              <iframe allow="autoplay = 0" height="250" width="450" src={Watch} frameborder="0" title="WatchingVideo" />
-            </div>
+            <WatchingVideo>
+              <Iframee allow="autoplay = 0" height="255" width="310" src={Watch} frameborder="0" title="WatchingVideo"></Iframee>
+            </WatchingVideo>
           
             
           </WatchVideoContent>
-        </div>
-        
+       
+      </Container>
     </WatchVideoWrapper>
   )
 }

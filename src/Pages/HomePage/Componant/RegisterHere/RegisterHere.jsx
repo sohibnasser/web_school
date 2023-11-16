@@ -1,9 +1,11 @@
+import { Container } from '@mui/material';
 import theme from '../../../../Design-System/ResableComponant/Config';
 import { Form, Header, Here, P, Register, RegisterHereWrapper, Title } from './style';
 
 export default function RegisterHere() {
   return (
-    <div className="container" data-aos="fade-right"  data-aos-delay="200" data-aos-duration="1000">
+	<Container>
+    <div data-aos="fade-right"  data-aos-delay="200" data-aos-duration="1000">
 
     <RegisterHereWrapper>
 
@@ -57,12 +59,12 @@ export default function RegisterHere() {
 		</button>
 	</div>
 	<p class="signup">Don't have an account?
-		<a rel="noopener noreferrer" href="#" class="">Sign up</a>
+		<a rel="noopener noreferrer" href="#" >Sign up</a>
 	</p>
 </Form>
 
     </RegisterHereWrapper>
-
     </div>
+	</Container>
   )
 }

@@ -8,29 +8,45 @@ export const NavbarWrapper = styled("section")`
    z-index: 2;
    position: fixed;
    width: 100%;
-  
+   gap: 15%;
 `;
 
 export const NavContainer = styled("div")`  
     display : flex ;
     align-items : center ;
-    justify-content : space-between ;
+    width: 100%;
+    overflow: hidden;
+    gap: 15%;
+    
 `;
 
 export const Title = styled("div")`  
+    width: 40%;
     display: flex;
+    align-items : center ;
     gap: 5px;
     font-size : 1.5rem;
+    font-family : cursive ;
     position: relative;
-    width: 45%;
-    font-family : cursive
+
+@media screen and (max-width:426px) {
+    font-size: 1.2rem;
+    width: 25%;
+}
+
 `;
 
 export const Logoo = styled("img")`  
     width: 35px;
-    position: absolute;
-    left: -35px;
-    top: -2px;
+
+@media screen and (min-width:890px) and (max-width:1024px) {
+    width: 30px;
+}
+
+@media screen and (max-width:426px) {
+    width: 27px;
+}
+ 
 `;
 
 export const Web = styled("span")`  
@@ -44,23 +60,77 @@ export const School = styled("span")`
     color : ${theme.whiteSmoke};
     text-transform : uppercase;
     font-weight :bolder;
+
 `;
 
 export const LinksWrapper = styled("div")`  
    gap : 1rem;
    display : flex;
-   align-items : center;
-   width: 57%;
+   width: 55% ;
+
+
+@media screen and (min-width:769px) and (max-width:991px) {
+    text-align: center;
+    margin: auto;
+    margin-top: 5%;
+    width: 100%;
+    display: block;
+}
+
+@media screen and (min-width:600px) and (max-width:768px) {
+    text-align: center;
+    margin: auto;
+    margin-top: 8%;
+    width: 100%;
+    display: block;
+}
+
+@media screen and (min-width:427px) and (max-width:599px) {
+    text-align: center;
+    margin: auto;
+    margin-top: 11%;
+    width: 100%;
+    display: block;
+}
+
+@media screen and (max-width:426px) {
+    text-align: center;
+    margin: auto;
+    margin-top: 20%;
+    width: 100%;
+    display: block;
+}
 
 `;
 
-export const Link = styled("a")`  
-   color : ${theme.active};
-   font-size : 1rem;
-   text-decoration : none;
+
+export const RoutLinks = styled("div")`  
+   width: 100%;
+   display : flex;
+
+
+@media screen and (min-width:769px) and (max-width:991px) {
+    display: block;
+    width: 100%;
+    padding: 2% 0;
+}
+
+@media screen and (min-width:600px) and (max-width:768px) {
+    display: block;
+    width: 100%;
+    padding: 2.5% 0;
+}
+
+@media screen and (min-width:427px) and (max-width:599px) {
+    display: block;
+    width: 100%;
+    padding: 3% 0;
+}
+
+@media screen and (max-width:426px) {
+    display: block;
+    width: 100%;
+    padding: 4% 0;
+}
+
 `;
-
-
-
-
-

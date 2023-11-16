@@ -2,18 +2,13 @@ import styled from "@emotion/styled";
 import theme from "../Config";
 
 export const InstractorWrapper =styled("div")`
-    width: 285px ;
-    text-align: center ;
-    border: 5px ${theme.whiteSmoke} solid ;
-    border-radius: 1rem 4rem ;
-    background-color : ${theme.Tab} ;
-    color : ${theme.whiteSmoke} ;
-   
+    width: 300px ;
 `;
 
-export const Img =styled("img")`
-    width: 100% ;
-    height: 20rem ;
-    border-radius: 1rem 4rem 0 0 ;
-   
+export const Content = styled("div")`
+    text-align: center ;
+    border-radius: 0 0 1rem 1rem;
+    background-color : ${theme.whiteSmoke} ;
+    color : ${theme.primary} ;
+    width: 20rem ;
 `;

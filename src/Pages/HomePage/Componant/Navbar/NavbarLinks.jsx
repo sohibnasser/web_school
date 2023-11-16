@@ -1,9 +1,13 @@
-import { Link } from "./style";
+
+import { Link } from "react-router-dom";
+import { RoutLinks } from "./style";
+
+import "../../../../Design-System/main.css";
 
 export default function NavbarLinks({navLink , navText , color , fontWeight}) {
   return (
-    
-        <Link style={{color : color , fontWeight : fontWeight}} href={navLink}>{navText}</Link>
-  
+    <RoutLinks>
+        <Link className="link"  style={{color : color , fontWeight : fontWeight , textDecoration : "none"}} to={navLink}>{navText}</Link>
+    </RoutLinks>
   )
 }

@@ -4,195 +4,424 @@ import theme from "../../../../Design-System/ResableComponant/Config";
 
 
 export const HeaderWrapper = styled("section")`
-    padding-top: 4rem;
+    width: 100%;
     height: 100vh;
-    position : relative ;
-    overflow : hidden ; 
     background-color: ${theme.secondary};
+    overflow: hidden;
+    position : relative ;
+   
+   
+
+@media screen and (min-width:950px) and (max-width:1024px) {
+    height: 38rem;
+    top: 10%;
+}
+
+@media screen and (min-width:880px) and (max-width:949px) {
+    height: 38rem;
+    top: 13%;
+}
+
+@media screen and (min-width:769px) and (max-width:879px) {
+    height: 38rem;
+    top: 16%;
+}
+
+@media screen and (min-width:730px) and (max-width:768px) {
+    height: 38rem;
+    top: 15%;
+}
+
+@media screen and (min-width:680px) and (max-width:729px) {
+    height: 38rem;
+    top: 20%;
+}
+
+@media screen and (min-width:640px) and (max-width:679px) {
+    height: 38rem;
+    top: 22%;
+ 
+}
+
+@media screen and (min-width:600px) and (max-width:639px) {
+    height: 38rem;
+    top: 25%;
+}
+
+@media screen and (min-width:560px) and (max-width:599px) {
+    height: 38rem;
+    top: 28%;
+}
+
+@media screen and (min-width:525px) and (max-width:559px) {
+    height: 38rem;
+    top: 28%;
+}
+
+@media screen and (min-width:480px) and (max-width:524px) {
+    height: 38rem;
+    top: 34%;
+}
+
+@media screen and (min-width:427px) and (max-width:479px) {
+    height: 38rem;
+    top: 43%;
+}
+
+@media screen and (min-width:321px) and (max-width:426px) {
+    height: 34rem;
+  
+}
+
+@media screen and (max-width:320px) {
+    height: 33rem; 
+
+}
+
 `;
 
+
 export const Program1 = styled("div")`
+    width: 16%;
     position: absolute;
     left : -1.5rem ;
     text-align:center ;
-    padding : 13% 0 ;
+    top : 42%;
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+    width: 18%;
+    top : 43% ;
+}
+
+@media screen and (min-width:680px) and (max-width:768px) {
+    width: 18%;
+    top : 44% ;
+}
+
+@media screen and (min-width:427px) and (max-width:679px) {
+    width: 18%;
+    top : 45% ;
+}
+
+
+@media screen and (min-width:321px) and (max-width:426px) {
+    top : 60% ;
+    left : -1rem ;
+}
+
+@media screen and (max-width:320px) {
+    top : 62% ;
+    left : -1rem ;
+}
 `;
 
-export const Content = styled("span")`
+export const Content = styled("p")`
     position: absolute;
-    top: 15rem;
-    left: 42rem;
-    width: 22rem;
-   
+    top: 42%;
+    left: 52%;
+    width: 28%;
+    font-size: 1.3rem;
+    line-height : 1.5rem ;
+
+@media screen and (min-width:950px) and (max-width:1024px) {
+    top: 43%;
+    left: 53%;
+    width: 28%;
+    font-size: 1.1rem;
+    line-height : 1.3rem ;
+}
+
+@media screen and (min-width:880px) and (max-width:949px) {
+    top: 41%;
+    left: 53%;
+    width: 28%;
+    font-size: 1.1rem;
+    line-height : 1.3rem ;
+}
+
+@media screen and (min-width:820px) and (max-width:879px) {
+    top: 42%;
+    left: 53%;
+    width: 28%;
+    font-size: 1.1rem;
+    line-height : 1.3rem ;
+}
+
+@media screen and (min-width:769px) and (max-width:819px) {
+    top: 40%;
+    left: 53%;
+    width: 28%;
+    font-size: 1.1rem;
+    line-height : 1.3rem ;
+}
+
+@media screen and (min-width:730px) and (max-width:769px) {
+    top: 42%;
+    left: 53%;
+    width: 28%;
+    font-size: 1rem;
+    line-height : 1.1rem ;
+ 
+}
+
+@media screen and (min-width:680px) and (max-width:729px) {
+    top: 43%;
+    left: 50%;
+    width: 32%;
+    font-size: 1rem;
+    line-height : 1.1rem ;
+}
+
+@media screen and (min-width:600px) and (max-width:679px) {
+    top: 45%;
+    left: 50%;
+    width: 35%;
+    font-size: 1rem;
+    line-height : 1rem ;
+}
+
+@media screen and (min-width:560px) and (max-width:599px) {
+    top: 45%;
+    left: 50%;
+    width: 33%;
+    font-size: .9rem;
+    line-height : 1rem ;
+}
+
+@media screen and (min-width:525px) and (max-width:559px) {
+    top: 45%;
+    left: 50%;
+    width: 32%;
+    font-size: .8rem;
+    line-height : .9rem ;
+}
+
+@media screen and (min-width:480px) and (max-width:524px) {
+    top: 44%;
+    left: 50%;
+    width: 33%;
+    font-size: .7rem;
+    line-height : .7rem ;
+}
+
+@media screen and (min-width:427px) and (max-width:479px) {
+    top: 45%;
+    left: 50%;
+    width: 36%;
+    font-size: .7rem;
+    line-height : .7rem ;
+}
+
+@media screen and (min-width:321px) and (max-width:426px) {
+    top: 22%;
+    left: .7rem;
+    width: 70%;
+    font-size: .9rem;
+    line-height: 1rem;
+}
+
+@media screen and (max-width:320px) {
+    top: 22%;
+    left: .7rem;
+    width: 69%;
+    font-size: .8rem;
+    line-height: .9rem;
+}
 `;
 
 export const Image = styled("div")`
-    width: 25rem;
     position: absolute;
-    left: 15rem;
+    width: 30%;
+    top: 15%;
+    left: 18%;
     display: flex;
     align-items : center ;
     justify-content : space-between ;
+
+@media screen and (min-width:950px) and (max-width:1024px) {
+    top: 23%;
+    left: 17%;
+    width: 30%;
+}
+
+@media screen and (min-width:880px) and (max-width:949px) {
+    top: 25%;
+    left: 17%;
+    width: 30%;
+}
+
+@media screen and (min-width:769px) and (max-width:879px) {
+    top: 27%;
+    left: 17%;
+    width: 30%;
+}
+
+@media screen and (min-width:730px) and (max-width:769px) {
+    top: 30%;
+    left: 17%;
+    width: 30%;
+}
+
+@media screen and (min-width:680px) and (max-width:729px) {
+    top: 33%;
+    left: 17%;
+    width: 30%;
+}
+
+@media screen and (min-width:640px) and (max-width:679px) {
+    top: 33%;
+    left: 17%;
+    width: 30%;
+}
+
+@media screen and (min-width:600px) and (max-width:639px) {
+    top: 34%;
+    left: 17%;
+    width: 30%;
+}
+
+@media screen and (min-width:560px) and (max-width:599px) {
+    top: 36%;
+    left: 17%;
+    width: 30%;
+}
+
+@media screen and (min-width:525px) and (max-width:559px) {
+    top: 38%;
+    left: 17%;
+    width: 30%;
+}
+
+@media screen and (min-width:480px) and (max-width:524px) {
+    top: 36%;
+    left: 17%;
+    width: 30%;
+}
+
+@media screen and (min-width:427px) and (max-width:479px) {
+    top: 39%;
+    left: 17%;
+    width: 30%;
+}
+
+@media screen and (min-width:321px) and (max-width:426px) {
+    top: 42%;
+    left: 30%;
+    width: 60%;
+}
+
+@media screen and (max-width:320px) {
+    top: 49%;
+    left: 30%;
+    width: 65%;
+}
 `;
 
 export const Img = styled("img")`
-    width: 25rem;
+    width: 100%;
 `;
 
-// export const H2 = styled("div")`
-//     margin-bottom : 2px;
-//     border-radius : 40px;
-//     color : ${theme.white} ;
-//     background-color: ${theme.Tab};
-// `;
-
 export const Program2 = styled("div")`
-  position: absolute;
+    width: 16%; 
+    position: absolute;
     right: -1.5rem;
     text-align:center ;
     direction : rtl ;
-    padding : 13% 0 ;
+    top : 42%;
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+    top : 43% ;
+    width: 18%; 
+}
+    
+@media screen and (min-width:680px) and (max-width:768px) {
+    width: 18%;
+    top : 44% ;
+}
+
+@media screen and (min-width:427px) and (max-width:679px) {
+    width: 18%;
+    top : 45% ;
+}
+
+@media screen and (min-width:321px) and (max-width:426px) {
+    top : 22%;
+    right : -1rem ;
+}
+
+@media screen and (max-width:320px) {
+    top: 21%;
+    right : -1rem ;
+}
 `;
 
-
 export const Div = styled("div")`
-    width: 12rem;
     padding: .5rem;
     margin-bottom : 2px;
     border-radius : 40px;
     color: ${theme.whiteSmoke} ;
     background-color: ${theme.primary};
-`;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    // background : url(${Header}) fixed 50%;
-    // background-size : cover ;
-    // background-repeat : no-repeat ; 
-
-
-
-
-// export const HeaderWrapper = styled("section")`
-//     height: 100vh;
-//     padding : 18% 0 ;
-//     text-align : center ;
-//     background-size : cover ;
-//     background : url(${HeaderImage}) fixed no-repeat;
-//     position : relative ;
-//     overflow : hidden ;
     
-// `;
+@media screen and (min-width:769px) and (max-width:1024px) {
+    padding: .3rem;
+    font-size: 1rem;
+}
 
-// export const Program1 = styled("div")`
-//     position: absolute;
-//     left : -3rem ;
-// `;
+@media screen and (min-width:730px) and (max-width:768px) {
+    padding: .3rem;
+    font-size: .9rem;
+}
 
-// export const Program2 = styled("div")`
-//     position: absolute;
-//     right: -2.2rem;
-//     direction : rtl ;
-// `;
+@media screen and (min-width:680px) and (max-width:729px) {
+    padding: .5rem;
+    font-size: .7rem;
+    width: 7rem;
+}
+@media screen and (min-width:640px) and (max-width:679px) {
+    padding: .4rem;
+    font-size: .7rem;
+    width: 7rem;
+}
 
-// export const H2 = styled("div")`
-//     padding: auto;
-//     margin-bottom : 2px;
-//     border-radius : 40px;
-//     border :1px ${theme.Green} solid ;
-//     :hover{
-//         background-color: ${theme.Green};
-//         color : ${theme.white} ;
-//         transition: all .5s;
-//     }
-// `;
+@media screen and (min-width:600px) and (max-width:639px) {
+    padding: .4rem;
+    font-size: .7rem;
+    width: 7rem;
+}
 
+@media screen and (min-width:560px) and (max-width:599px) {
+    padding: .4rem;
+    font-size: .6rem;
+    width: 6rem;
+}
 
+@media screen and (min-width:525px) and (max-width:559px) {
+    padding: .4rem;
+    font-size: .6rem;
+    width: 6rem;
+}
 
+@media screen and (min-width:480px) and (max-width:524px) {
+    padding: .3rem;
+    font-size: .5rem;
+    width: 5.5rem;
+}
 
+@media screen and (min-width:427px) and (max-width:479px) {
+    padding: .4rem;
+    font-size: .4rem;
+    width: 5rem;
+}
 
+@media screen and (min-width:321px) and (max-width:426px) {
+    padding: 10%;
+    font-size: .7rem;
+    width: 150%;
+}
 
-
-// @media (prefers-reduced-motion: no-preference) {
-//   .App-logo {
-//     animation: App-logo-spin infinite 20s linear;
-//   }
-// }
-
-// @keyframes App-logo-spin {
-//   from {
-//     transform: rotate(0deg);
-//   }
-//   to {
-//     transform: rotate(360deg);
-//   }
-// }
-
-
-
-
-// export const SubTitle = styled("h3")`
-
-//   color : ${theme.black};
-//   font : 2rem bold;
-// `;
-
-// export const Title = styled("h1")`
-
-//   color : ${theme.black};
-//   font : 3rem bold;
-// `;
-// export const Learn = styled("button")`
-
-//   font-size : 1rem;
-//   color : ${theme.primary};
-//   background : ${theme.white};
-//   margin : 0 2rem ;
-//   padding : 1rem 2rem;
-//   border-radius :5rem;
-//   border : 1px solid ${theme.white};
-//   :hover{
-//    background : ${theme.primary};
-//    color : ${theme.white};
-//    border : 1px solid ${theme.primary};
-//    transition: all 1.1s;
-//   }
-// `;
-// export const Register = styled("button")`
-
-//   font-size : 1rem;
-//   color : ${theme.white};
-//   background : ${theme.primary};
-//   margin-right : 2rem ;
-//   padding : 1rem 2rem;
-//   border-radius :5rem;
-//   border : 1px solid ${theme.primary};
-//   :hover{
-//    background : ${theme.white};
-//    color : ${theme.primary};
-//    border : 1px solid ${theme.white};
-//    transition: all 1.1s;
-//   }
-// `;
+@media screen and (max-width:320px) {
+    padding: 13%;
+    font-size: .6rem;
+    width: 170%;
+}
+`;

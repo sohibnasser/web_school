@@ -1,12 +1,14 @@
 import React from 'react'
-import { Img, InstractorWrapper } from './style'
+import { Content, InstractorWrapper } from './style'
 
 export default function SlideInstractor({img , alt , name , job}) {
   return (
     <InstractorWrapper>
-      <Img src={img} alt={alt}/>
+      <img src={img} alt={alt}/>
+      <Content>
       <h2>{name}</h2>
       <span>{job}</span>
+      </Content>
     </InstractorWrapper>
   )
 }

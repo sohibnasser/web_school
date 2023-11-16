@@ -82,7 +82,7 @@ export default function Header() {
 
       <Content>
      
-      <motion.p style={{ fontSize : "1.5rem" , width : "100%" , color : "#6153BD" , lineHeight : "1.5rem"}}
+      <motion.p style={{ color : "#6153BD" }}
               
               variants={pVariants}
               initial = "hidden"
@@ -95,16 +95,16 @@ export default function Header() {
       
 
 
-    <div>
-          <motion.div style={{ color : "#9c9797f5" , lineHeight : "1.5rem"}}
+  
+          <motion.p style={{ color : "#9c9797f5" }}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
           >
             
             {texts[currentIndex]}
-          </motion.div>
-    </div>
+          </motion.p>
+
       </Content>
 
 

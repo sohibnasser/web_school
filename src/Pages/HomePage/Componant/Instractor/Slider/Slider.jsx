@@ -1,3 +1,4 @@
+import { faArrowAltCircleLeft, faArrowAltCircleRight } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
@@ -7,16 +8,13 @@ import { Autoplay, EffectCoverflow, Navigation, Pagination } from 'swiper/module
 import { Swiper, SwiperSlide } from 'swiper/react';
 import InstractorData from "../../../../../Design-System/ResableComponant/SlideInstractor/InstractorData";
 import SlideInstractor from "../../../../../Design-System/ResableComponant/SlideInstractor/SlideInstractor";
+import './styleSlider.css';
 
 export default function Slider(){
 
   return (
-    <div className="container">  
-    
-
-   
-
-    <Swiper style={{ width : 900 , paddingBottom : 80 }} 
+ 
+    <Swiper 
         effect = {"coverflow"}
         grabCursor = {true}
         centeredSlides = {true}
@@ -25,7 +23,7 @@ export default function Slider(){
           delay: 2500,
           disableOnInteraction: false,
         }}
-        slidesPerView={3}
+        slidesPerView={"auto"}
         coverflowEffect={{
           rotate : 0 ,
           stretch : 0 ,
@@ -39,15 +37,16 @@ export default function Slider(){
           nextEl : '.swiper-button-next' ,
           prevEl : '.swiper-button-prev',
           clickable : true ,
-
         }}
         modules={[Autoplay , EffectCoverflow , Pagination  , Navigation]}
         className='swiper_container'
       >
+
+        
         {InstractorData.map( item => {
 
             return(
-              <SwiperSlide style={{ height : 370 }}> 
+              <SwiperSlide className='swiperSlide'> 
 
               <SlideInstractor img={item.img} alt={item.alt} name={item.name} job={item.job} key={item.id}/>
               </SwiperSlide>
@@ -55,20 +54,20 @@ export default function Slider(){
         })}
          
         <div className="slider-controler">
-              <div style={{color : "white"}} className="swiper-button-prev slider-arrow">
-                  <FontAwesomeIcon name='arrow-back-outline'/>
+              <div className="swiper-button-prev slider-arrow">
+                  <FontAwesomeIcon icon={faArrowAltCircleLeft}/>
               </div>
 
-              <div style={{color : "white"}} className="swiper-button-next slider-arrow">
-                  <FontAwesomeIcon name='arrow-forward-outline'/>
+              <div className="swiper-button-next slider-arrow">
+                  <FontAwesomeIcon icon={faArrowAltCircleRight}/>
               </div>
              
               <div  className="swiper-pagination"></div>
         </div>
       </Swiper>
      
-   
-    </div>
+    
+
    
   );
 };

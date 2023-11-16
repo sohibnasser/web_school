@@ -3,7 +3,7 @@ import AboutUs from "./Componant/AboutUs/AboutUs";
 import Footer from "./Componant/Footer/Footer";
 import Header from "./Componant/Header/Header";
 import Instractor from "./Componant/Instractor/Instractor";
-import Navbar from "./Componant/Navbar/Navbar";
+import NavbarComponant from "./Componant/Navbar/Navbar";
 import OurPrograms from "./Componant/OurPrograms/OurPrograms";
 import Overview from "./Componant/Overview/Overview";
 import RegisterHere from "./Componant/RegisterHere/RegisterHere";
@@ -18,7 +18,7 @@ export default function Home() {
       {/* <link rel="canonical" href="/" /> */}
     </Helmet>
       
-        <Navbar />
+        <NavbarComponant />
         <Header />
         <AboutUs />
         <Overview />

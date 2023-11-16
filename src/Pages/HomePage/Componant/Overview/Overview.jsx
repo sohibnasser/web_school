@@ -1,11 +1,12 @@
 import { faChalkboardTeacher, faCode, faUserGraduate } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Container } from "@mui/material";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
 import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
-import { Description, FirstTitle, OverviewContainer, OverviewWrapper, SecoundTitle, ThirdTitle, Titel, Wrapper } from './style';
+import { Description, FirstTitle, Icon, OverviewContainer, OverviewWrapper, SecoundTitle, ThirdTitle, Wrapper } from './style';
 
 export default function Overview() {
   useEffect(() => {
@@ -17,19 +18,19 @@ export default function Overview() {
   const [counterOn3 , setCounterOn3] = useState(false) ;
 
   return (
-    <OverviewWrapper>
-        <div className="container">
-
+    
+<OverviewWrapper>   
+    <Container>
             <OverviewContainer data-aos="fade-up"  data-aos-delay="200" data-aos-duration="500">
               
             <Wrapper>
-                  <div><FontAwesomeIcon size="3x" color="#6153BD" icon={faChalkboardTeacher}/></div>
+                  <Icon><FontAwesomeIcon color="#6153BD" icon={faChalkboardTeacher}/></Icon>
 
                   <ScrollTrigger onEnter={()=> setCounterOn1(true)} onExit={()=> setCounterOn1(false)}>
 
                   <FirstTitle>
                       +
-                      {counterOn1 && <CountUp start={0} end={20} duration={5} />} <Titel>Instractor</Titel>
+                      {counterOn1 && <CountUp start={0} end={20} duration={5} />} <span>Instractor</span>
                   </FirstTitle>
 
                   </ScrollTrigger>
@@ -39,12 +40,12 @@ export default function Overview() {
 
 
             <Wrapper>
-                  <div><FontAwesomeIcon size="3x" color="#6153BD" icon={faCode}/></div>
+                  <Icon><FontAwesomeIcon color="#6153BD" icon={faCode}/></Icon>
                   <ScrollTrigger onEnter={()=> setCounterOn2(true)} onExit={()=> setCounterOn2(false)}>
 
                           <SecoundTitle>
                             +
-                            {counterOn2 && <CountUp start={0} end={30} duration={5} />} <Titel>Language</Titel>
+                            {counterOn2 && <CountUp start={0} end={30} duration={5} />} <span>Language</span>
 
                           </SecoundTitle>
 
@@ -54,12 +55,12 @@ export default function Overview() {
 
             
             <Wrapper>
-                  <div><FontAwesomeIcon size="3x" color="#6153BD" icon={faUserGraduate}/></div>
+                  <Icon><FontAwesomeIcon color="#6153BD" icon={faUserGraduate}/></Icon>
                   <ScrollTrigger onEnter={()=> setCounterOn3(true)} onExit={()=> setCounterOn3(false)}>
 
                         <ThirdTitle>
                           +
-                          {counterOn3 && <CountUp start={0} end={100} duration={5} />} <Titel>Student</Titel>
+                          {counterOn3 && <CountUp start={0} end={100} duration={5} />} <span>Student</span>
                           
                         </ThirdTitle>
 
@@ -70,7 +71,7 @@ export default function Overview() {
 
               </OverviewContainer>
 
-        </div>
+        </Container>
     </OverviewWrapper>
   )
 }
