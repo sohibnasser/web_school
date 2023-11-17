@@ -58,7 +58,7 @@ export default function NavbarComponant() {
                      
                       id={`offcanvasNavbarLabel-expand-${expand}`}
                     >
-                      <Title>
+                      <Title style={{width : "15rem"}}>
                         <Logoo className="Logo" src={Logo} alt="Logo" />
                         <Web className="wow animate__animated animate__fadeInUp animate__slower	1s">
                           web

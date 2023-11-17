@@ -8,16 +8,15 @@ export const NavbarWrapper = styled("section")`
    z-index: 2;
    position: fixed;
    width: 100%;
-   gap: 15%;
 `;
 
 export const NavContainer = styled("div")`  
     display : flex ;
     align-items : center ;
     width: 100%;
+    gap: 12%;
     overflow: hidden;
-    gap: 15%;
-    
+
 `;
 
 export const Title = styled("div")`  
@@ -26,12 +25,20 @@ export const Title = styled("div")`
     align-items : center ;
     gap: 5px;
     font-size : 1.5rem;
-    font-family : cursive ;
+    font-family : 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    overflow: hidden;
     position: relative;
+
+
+@media screen and (max-width:665px) {
+    width: 30%;
+    overflow: unset;
+}
 
 @media screen and (max-width:426px) {
     font-size: 1.2rem;
     width: 25%;
+    overflow: unset;
 }
 
 `;
@@ -39,9 +46,6 @@ export const Title = styled("div")`
 export const Logoo = styled("img")`  
     width: 35px;
 
-@media screen and (min-width:890px) and (max-width:1024px) {
-    width: 30px;
-}
 
 @media screen and (max-width:426px) {
     width: 27px;

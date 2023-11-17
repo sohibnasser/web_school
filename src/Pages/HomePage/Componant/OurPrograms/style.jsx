@@ -12,9 +12,12 @@ export const OurProgramsWrapper = styled("section") `
     overflow: hidden;
 
 
+@media screen and (min-width:769px) and (max-width:1024px) {
+    padding-top : 11%;
+}
+
 @media screen and (min-width:727px) and (max-width:768px) {
     padding-top : 15%;
-
 }
 
 @media screen and (min-width:427px) and (max-width:726px) {

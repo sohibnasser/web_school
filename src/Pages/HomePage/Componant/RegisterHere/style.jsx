@@ -89,6 +89,10 @@ export const P = styled("p")`
     font-weight: bold;
     color : ${theme.gray};
 
+@media screen and (max-width:1024px) {
+    width : 95% ;
+}
+
 @media screen and (max-width:768px) {
     width : 100% ;
 }

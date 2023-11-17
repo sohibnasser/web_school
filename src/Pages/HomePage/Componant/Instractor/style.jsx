@@ -13,8 +13,14 @@ export const CreativeInstractorWrapper = styled("section")`
     background-repeat : no-repeat ;
     overflow: hidden;
 
+@media screen and (min-width:769px) and (max-width:1024px) {
+    padding-top : 14%;
+
+}
+
 @media screen and (min-width:427px) and (max-width:768px) {
-    padding-top : 12%;
+    padding-top : 20%;
+    height: 128vh;
 }
 
 @media screen and (min-width:321px) and (max-width:426px) {
