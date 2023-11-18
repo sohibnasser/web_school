@@ -1,9 +1,9 @@
 {
-  "name": "webschool",
+  "name": "web_school",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "homepage":"https://sohibnasser.github.io/WebSchool",
+    "homepage":"https://sohibnasser.github.io/Web_School",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@fortawesome/fontawesome-svg-core": "^6.4.2",
